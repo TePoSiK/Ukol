@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-int porovnani(int a, int b)
+int porovnani(int a, int b)		//funkce s hodnotama a a b
 {
-	if (a > b)
-		return b;
-	else 
-		return a;
+	if (a > b)			// zjistí jestli je a větší než b
+		return b;		// vrátí b
+	else 				// jakoukoli jinou
+		return a;		// vrátí a
 }
 
 int main()
 {
-	int x, y, vysledek;
-	printf("Napiste prvni cislo: ");
-	scanf_s("%i", &x);
-	printf("Napiste druhe cislo cislo: ");
-	scanf_s("%i", &y);
+	int x, y, vysledek;				// jsou nedefinovány hodnoty x,y,vysledek
+	printf("Napiste prvni cislo: ");		// napise do konzole
+	scanf_s("%i", &x);				// uloží zapsanou hodnotu do x
+	printf("Napiste druhe cislo cislo: ");		// zase napíše do konzole
+	scanf_s("%i", &y);				// uloží zapsanou hodnotu do y
 
-	vysledek = porovnani(x, y);
-	printf("Mensi cislo bylo: %i", vysledek);
+	vysledek = porovnani(x, y);			// vyvolá funkci porovnani
+	printf("Mensi cislo bylo: %i", vysledek);	// vypíše menší číslo
 }
