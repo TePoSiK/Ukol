@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int porovnani(int a, int b)
+{
+	if (a > b)
+		return b;
+	else 
+		return a;
+}
+
+int main()
+{
+	int x, y, vysledek;
+	printf("Napiste prvni cislo: ");
+	scanf_s("%i", &x);
+	printf("Napiste druhe cislo cislo: ");
+	scanf_s("%i", &y);
+
+	vysledek = porovnani(x, y);
+	printf("Mensi cislo bylo: %i", vysledek);
+}
