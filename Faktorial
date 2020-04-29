@@ -1,17 +1,17 @@
-#include <stdio.h>						            	// Knihovna
+#include <stdio.h>			 	   	// Knihovna
 
-int faktorial(int a)					            	// Funkce pojmenovaná faktorial s hodnotou a
+int faktorial(int a)			            	// Funkce pojmenovaná faktorial s hodnotou a
 {
 	for (int i = a - 1; i > 0; i--)		      	// Cyklus který zadá, že hodnota i je hodnota a - 1 a pokud je větší než 0 tak se odečítá
-		a = a * i;						                	// Zadá, že a je a * i
-	return a;								                  // Vrátí a
+		a = a * i;		             	// Zadá, že a je a * i
+	return a;               	                // Vrátí a
 }
 
 int main()
 {	
-	int x, vysledek;					              	// Přidá hodnotu x a vysledek
-	printf("Zadejte cislo faktorialu: ");	    // Vypíše do konzole
-	scanf_s("%i", &x);					             	// Uloží hodnotu kterou zadal uživatel do x
-	vysledek = faktorial(x);			           	// Vyvolá funkci faktorial
+	int x, vysledek;		              	// Přidá hodnotu x a vysledek
+	printf("Zadejte cislo faktorialu: ");		// Vypíše do konzole
+	scanf_s("%i", &x);		             	// Uloží hodnotu kterou zadal uživatel do x
+	vysledek = faktorial(x);	           	// Vyvolá funkci faktorial
 	printf("Vysledek je: %i", vysledek);    	// Vypíše výsledek
 }
