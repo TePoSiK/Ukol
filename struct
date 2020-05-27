@@ -1,0 +1,47 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int zapsano = 0;
+int vypsano = 0;
+
+// nevím jak to jinak udělat, nešlo mi to udělat jako "Zlomek z1 = vytvor_zlomek(5, 7);"
+
+struct Zlomek
+{
+	int citatel;
+	int jmenovatel;
+};
+void vytvor_zlomek(int x, int y);
+
+void vypis_zlomek(Zlomek z)
+{
+	printf("%i / %i", z.citatel, z.jmenovatel);
+}
+
+int main(Zlomek z)
+{
+	int x, y;
+	while (zapsano != 1)
+	{
+
+		printf("Napiste citatel: ");
+		scanf_s("%i", &x);
+		printf("Napiste jmenovatel: ");
+		scanf_s("%i", &y);
+		zapsano = 1;
+		vytvor_zlomek(x, y);
+	}
+	while (vypsano != 1)
+	{
+		vypis_zlomek(z);
+		vypsano = 1;
+	}
+}
+
+void vytvor_zlomek(int x, int y)
+{
+	Zlomek z1;
+	z1.citatel = x;
+	z1.jmenovatel = y;
+	main(z1);
+}
